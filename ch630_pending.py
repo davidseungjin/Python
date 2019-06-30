@@ -34,7 +34,7 @@ def get_num_of_words(user_str):
         num_word += 1
     return num_word
 def fix_capitalization(user_str):
-    sentence_splitted = user_str.split('.')
+    sentence_splitted = user_str.split('. ')
     print(sentence_splitted)
 
 if __name__ == '__main__':

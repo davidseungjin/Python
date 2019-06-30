@@ -36,12 +36,16 @@ def get_num_of_words(user_str):
 def fix_capitalization(user_str):
     sentence_splitted = user_str.split('. ')
     capitalized_list = []
+    num_sentence = 0
     for i in sentence_splitted:
         capitalized_list.append(i.capitalize())
+        num_sentence += 1
         
     print('sentence_splitted is ', sentence_splitted)
     print('capitalized_list is ', capitalized_list)
-    
+    new_text = '. '.join(capitalized_list)
+    print(new_text)
+    return num_sentence
 
 if __name__ == '__main__':
     # Complete main section of code

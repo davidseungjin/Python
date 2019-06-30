@@ -1,6 +1,6 @@
 # Type all other functions here
 
-def print_menu(usr_str):
+def print_menu(user_str):
     menu_op = ' '
     while menu_op != 'q':
         print('MENU')
@@ -13,14 +13,14 @@ def print_menu(usr_str):
         print()
         menu_op = input('Choose an option:')
         if menu_op == 'c':
-            print('Number of non-whitespace characters: %d' % get_num_of_non_WS_characters(usr_str))
+            print('Number of non-whitespace characters: %d' % get_num_of_non_WS_characters(user_str))
         if menu_op == 'w':
-            print('Number of words: %d' % get_num_of_words(usr_str))
+            print('Number of words: %d' % get_num_of_words(user_str))
         if menu_op == 'f':
-            print('Number of letters capitalized:', fix_capitalization(usr_str))
+            print('Number of letters capitalized:', fix_capitalization(user_str))
           #  print("Edited text: We'll continue our quest in space. There will be more shuttle flights and more shuttle crews and, yes; more volunteers, more civilians, more teachers in space. Nothing ends here; our hopes and our journeys continue!")
         print()
-    return menu_op, usr_str
+    return menu_op, user_str
 def get_num_of_non_WS_characters(user_str):
     num_char = 0
     for i in user_str:
@@ -35,7 +35,13 @@ def get_num_of_words(user_str):
     return num_word
 def fix_capitalization(user_str):
     sentence_splitted = user_str.split('. ')
-    print(sentence_splitted)
+    capitalized_list = []
+    for i in sentence_splitted:
+        capitalized_list.append(i.capitalize())
+        
+    print('sentence_splitted is ', sentence_splitted)
+    print('capitalized_list is ', capitalized_list)
+    
 
 if __name__ == '__main__':
     # Complete main section of code

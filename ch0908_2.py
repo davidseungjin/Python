@@ -10,3 +10,4 @@ class Toy:
 
 truck = Toy('Monster Truck XX', 14.99, 5)
 print(truck)
+

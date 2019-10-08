@@ -1,0 +1,5 @@
+David Lee is trying to test and practice how to write text into a file after creating file
+
+This is the second line. 
+
+ This is the third line

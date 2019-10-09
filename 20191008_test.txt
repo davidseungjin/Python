@@ -1,0 +1,5 @@
+name michael age 31 city NY sec m
+name jane city LA sex f age 32
+city Irvine sex m age 40 name David
+
+

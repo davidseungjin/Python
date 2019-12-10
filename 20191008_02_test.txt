@@ -1,5 +1,0 @@
-START
-Python
-David
-123
-END

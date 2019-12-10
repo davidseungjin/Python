@@ -1,3 +1,0 @@
-CODE001;first
-CODE002;second
-CODE003;third

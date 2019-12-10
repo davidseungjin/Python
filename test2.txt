@@ -1,3 +1,0 @@
-this is to test readlines function rather than read()
-it read line by line and put them into list.
-
